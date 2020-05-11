@@ -3,7 +3,7 @@
   "collaborators": [
     "Parker Given <rgiven@amazon.com>"
   ],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "files": [
     "wasm_boids_bg.wasm",
     "wasm_boids.js",
