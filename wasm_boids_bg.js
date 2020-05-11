@@ -38,10 +38,6 @@ function getStringFromWasm0(ptr, len) {
     return cachedTextDecoder.decode(getUint8Memory0().subarray(ptr, ptr + len));
 }
 
-function _assertNum(n) {
-    if (typeof(n) !== 'number') throw new Error('expected a number argument');
-}
-
 function logError(f) {
     return function () {
         try {
@@ -59,6 +55,10 @@ function logError(f) {
             throw e;
         }
     };
+}
+
+function _assertNum(n) {
+    if (typeof(n) !== 'number') throw new Error('expected a number argument');
 }
 
 function addHeapObject(obj) {
@@ -219,6 +219,10 @@ export class BoidOrchestrator {
         wasm.boidorchestrator_remove_last_boid(ptr);
     }
 }
+
+export const __wbg_log_6db9317aa8b577a9 = logError(function(arg0, arg1) {
+    console.log(getStringFromWasm0(arg0, arg1));
+});
 
 export const __wbindgen_object_drop_ref = function(arg0) {
     takeObject(arg0);
