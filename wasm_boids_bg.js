@@ -249,7 +249,7 @@ export const __wbg_stack_558ba5917b466edd = logError(function(arg0, arg1) {
     getInt32Memory0()[arg0 / 4 + 0] = ptr0;
 });
 
-export const __wbg_atan_cfb227c4a2914629 = typeof Math.atan == 'function' ? Math.atan : notDefined('Math.atan');
+export const __wbg_atan2_774cb93627d441a3 = typeof Math.atan2 == 'function' ? Math.atan2 : notDefined('Math.atan2');
 
 export const __wbg_random_39c02e3d0f8a020f = typeof Math.random == 'function' ? Math.random : notDefined('Math.random');
 
