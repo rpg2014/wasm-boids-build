@@ -8,3 +8,6 @@ export function boidorchestrator_items(a: number): number;
 export function boidorchestrator_length(a: number): number;
 export function boidorchestrator_add_boid(a: number): void;
 export function boidorchestrator_remove_last_boid(a: number): void;
+export function __wbindgen_free(a: number, b: number): void;
+export function __wbindgen_malloc(a: number): number;
+export function __wbindgen_realloc(a: number, b: number, c: number): number;
