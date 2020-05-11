@@ -2,9 +2,6 @@
 /* eslint-disable */
 /**
 */
-export function greet(): void;
-/**
-*/
 export class BoidOrchestrator {
   free(): void;
 /**

@@ -1,9 +1,9 @@
 {
   "name": "wasm-boids",
   "collaborators": [
-    "Parker Given <rgiven@amazon.com>"
+    "Parker Given <pgiven14@gmail.com>"
   ],
-  "version": "0.1.1",
+  "version": "0.1.0",
   "files": [
     "wasm_boids_bg.wasm",
     "wasm_boids.js",
@@ -13,5 +13,5 @@
   ],
   "module": "wasm_boids.js",
   "types": "wasm_boids.d.ts",
-  "sideEffects": "false"
+  "sideEffects": false
 }
