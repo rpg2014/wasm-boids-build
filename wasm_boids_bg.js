@@ -204,19 +204,15 @@ export class BoidOrchestrator {
     */
     add_boid() {
         if (this.ptr == 0) throw new Error('Attempt to use a moved value');
-        var ptr = this.ptr;
-        this.ptr = 0;
-        _assertNum(ptr);
-        wasm.boidorchestrator_add_boid(ptr);
+        _assertNum(this.ptr);
+        wasm.boidorchestrator_add_boid(this.ptr);
     }
     /**
     */
     remove_last_boid() {
         if (this.ptr == 0) throw new Error('Attempt to use a moved value');
-        var ptr = this.ptr;
-        this.ptr = 0;
-        _assertNum(ptr);
-        wasm.boidorchestrator_remove_last_boid(ptr);
+        _assertNum(this.ptr);
+        wasm.boidorchestrator_remove_last_boid(this.ptr);
     }
 }
 
