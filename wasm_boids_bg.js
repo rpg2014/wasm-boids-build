@@ -165,13 +165,17 @@ export class BoidOrchestrator {
     * @param {number} world_width
     * @param {number} world_height
     * @param {number} num_boids
+    * @param {number} pcModifier
+    * @param {number} avoidanceModifier
+    * @param {number} avoidanceRange
+    * @param {number} velocityMatchingModifier
     * @returns {BoidOrchestrator}
     */
-    static new(world_width, world_height, num_boids) {
+    static new(world_width, world_height, num_boids, pcModifier, avoidanceModifier, avoidanceRange, velocityMatchingModifier) {
         _assertNum(world_width);
         _assertNum(world_height);
         _assertNum(num_boids);
-        var ret = wasm.boidorchestrator_new(world_width, world_height, num_boids);
+        var ret = wasm.boidorchestrator_new(world_width, world_height, num_boids, pcModifier, avoidanceModifier, avoidanceRange, velocityMatchingModifier);
         return BoidOrchestrator.__wrap(ret);
     }
     /**
