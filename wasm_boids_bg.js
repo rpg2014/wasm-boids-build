@@ -5,7 +5,7 @@ const lTextDecoder = typeof TextDecoder === 'undefined' ? (0, module.require)('u
 let cachedTextDecoder = new lTextDecoder('utf-8', { ignoreBOM: true, fatal: true });
 
 cachedTextDecoder.decode();
-
+export const memory = wasm.memory; 
 let cachegetUint8Memory0 = null;
 function getUint8Memory0() {
     if (cachegetUint8Memory0 === null || cachegetUint8Memory0.buffer !== wasm.memory.buffer) {
