@@ -12,9 +12,10 @@ export class BoidOrchestrator {
 * @param {number} avoidanceModifier 
 * @param {number} avoidanceRange 
 * @param {number} velocityMatchingModifier 
+* @param {number} borderConstraintModifier 
 * @returns {BoidOrchestrator} 
 */
-  static new(world_width: number, world_height: number, num_boids: number, pcModifier: number, avoidanceModifier: number, avoidanceRange: number, velocityMatchingModifier: number): BoidOrchestrator;
+  static new(world_width: number, world_height: number, num_boids: number, pcModifier: number, avoidanceModifier: number, avoidanceRange: number, velocityMatchingModifier: number, borderConstraintModifier: number): BoidOrchestrator;
 /**
 * @param {number} dt 
 */
@@ -33,4 +34,54 @@ export class BoidOrchestrator {
 /**
 */
   remove_last_boid(): void;
+/**
+* @param {number} boid_id 
+* @returns {number} 
+*/
+  get_velocity_to_percived_center_x(boid_id: number): number;
+/**
+* @param {number} boid_id 
+* @returns {number} 
+*/
+  get_velocity_to_percived_center_y(boid_id: number): number;
+/**
+* @param {number} boid_id 
+* @returns {number} 
+*/
+  get_avoidance_velocity_x(boid_id: number): number;
+/**
+* @param {number} boid_id 
+* @returns {number} 
+*/
+  get_avoidance_velocity_y(boid_id: number): number;
+/**
+* @param {number} boid_id 
+* @returns {number} 
+*/
+  get_match_percived_velocity_x(boid_id: number): number;
+/**
+* @param {number} boid_id 
+* @returns {number} 
+*/
+  get_match_percived_velocity_y(boid_id: number): number;
+/**
+* @param {number} boid_id 
+* @returns {number} 
+*/
+  get_velocity_mag(boid_id: number): number;
+/**
+* @param {number} boid_id 
+* @returns {number} 
+*/
+  get_velocity_direction(boid_id: number): number;
+/**
+* @param {number} boid_id 
+* @returns {number} 
+*/
+  get_velocity_x(boid_id: number): number;
+/**
+* @param {number} boid_id 
+* @returns {number} 
+*/
+  get_velocity_y(boid_id: number): number;
 }
