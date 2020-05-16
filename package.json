@@ -8,7 +8,7 @@
     "wasm_boids_bg.wasm",
     "wasm_boids.js",
     "wasm_boids_bg.js",
-    "wasm_boids_bg.d.ts"
+    "wasm_boids_bg.d.ts",
     "wasm_boids.d.ts"
   ],
   "module": "wasm_boids.js",
